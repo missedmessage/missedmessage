@@ -2,12 +2,12 @@
 /*basic styles starts
 @font-face {
   font-family: 'Noto Serif SC ZH';
-  src: url('https://timegg-1306358676.cos.ap-beijing.myqcloud.com/font/SourceHanSerifCN-Regular.otf');
+  src: url('https://zozo.sswin.site/css/SmileySans-Oblique.otf');
 }
 */
 @font-face {
   font-family: 'Noto Serif SC ZH';
-  src: url('https://zozo.sswin.site/css/SmileySans-Oblique.otf');
+  src: url('https://timegg-1306358676.cos.ap-beijing.myqcloud.com/font/SourceHanSerifCN-Regular.otf');
 }
 html {
   background-color: #f7f7f7;
