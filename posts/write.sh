@@ -1,8 +1,11 @@
 cd "Github repo"/Blog/zozo2_hugo
-now=$(date "+%Y-%m-%d")
-str=$(md5 -s $now)
+now1=$(date "+%Y-%m-%dT%H:%M:%S+08:00")
+now2=$(date "+%Y %m %d")
+str=$(md5 -s $now1$now2)
 md5=${str#* = }
-hugo new posts/"$now.md"
-open /Users/wangshuai/GitHub\ repo/Blog/zozo2_hugo/content/posts/$now.md
+submd5=${md5:4:(12-4)}
+
+hugo new posts/"$submd5.md"
+open /Users/wangshuai/GitHub\ repo/Blog/zozo2_hugo/content/posts/$submd5.md
 cd content/posts
-mkdir "$md5"
+mkdir "$submd5"
