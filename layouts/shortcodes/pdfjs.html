@@ -1,0 +1,5 @@
+<script src="{{ .Site.BaseURL }}js/PDFobject.js" type="text/javascript"></script>
+<p id="example1"></p>
+<script>
+      var options = { height: "550px", pdfOpenParams: { view: 'FitV', page: '0' }, name: "mans", fallbackLink: "<p>您的浏览器暂不支持此pdf，请下载最新的浏览器</p>" }; PDFObject.embed("{{ .Get "url" }}", "#example1", options);
+</script>

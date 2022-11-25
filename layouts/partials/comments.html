@@ -1,0 +1,18 @@
+
+<!-- ... -->
+
+<div id="waline"></div>
+<script>
+  Waline.init({
+    el: '#waline',
+    emoji: [
+    '//unpkg.com/@waline/emojis@1.0.1/weibo',
+    '//unpkg.com/@waline/emojis@1.0.1/bilibili',
+    '//unpkg.com/@waline/emojis@1.0.1/qq',
+    '//unpkg.com/@waline/emojis@1.0.1/tieba',
+    ],
+    serverURL: '{{ .Site.Params.waline.Url }}',
+  });
+</script>
+
+
