@@ -9,9 +9,9 @@
 	{{ $title := ( .Title ) }}
 	{{ $siteTitle := ( .Site.Title ) }}
 	{{ if .IsHome }}
-	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }}｜ {{ .Site.Params.Subtitle }}{{ end }} </title>
+	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }} {{ end }} </title>
 	{{ else }}
-	<title>{{ $title }} ｜ {{ $siteTitle }}</title>
+	<title>{{ $title }} </title>
 	{{ end }}
     <!-- description & keywords -->
     {{ if .Description }}
@@ -34,7 +34,7 @@
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end }}
     
-    <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" />
+    <link rel="shortcut icon" href="https://thispersondoesnotexist.com/image" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
