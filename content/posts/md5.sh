@@ -1,9 +1,10 @@
 cd "Github repo"/Blog/zozo2_hugo
-#now=$(date "+%Y-%m-%d")
-
-str=$(md5 -s 2022-11-26T00:34:28+08:002022-11-26T00:34:28+08:00)
+now1=$(date "+%Y-%m-%dT%H:%M:%S+08:00")
+now2=$(date "+%Y %m %d")
+str=$(md5 -s $now1$now2)
 md5=${str#* = }
-
-echo -n $md5
+submd5=${md5:4:(12-4)}
+#echo -n $str
+echo -n $submd5
 
 exec zsh
