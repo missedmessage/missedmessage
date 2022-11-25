@@ -6,7 +6,7 @@
 }
 */
 @font-face {
-  font-family: 'smilehans';
+  font-family: 'Noto Serif SC ZH';
   src: url('https://zozo.sswin.site/css/SmileySans-Oblique.otf');
 }
 html {
@@ -112,7 +112,7 @@ hr {
 }
 
 .nav_container .site_nav {
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   font-weight: bold;
   float: right;
 }
@@ -163,7 +163,7 @@ hr {
 }
 
 .header .site_title_container .site_title a {
-  font-family: "Helvetica Neue", "Noto Serif SC", "smilehans SC";
+  font-family: "Helvetica Neue", "Noto Serif SC", "Noto Serif SC ZH SC";
   font-size: 28px;
   width: 65px;
   letter-spacing: 2px;
@@ -191,7 +191,7 @@ hr {
 }
 
 .header .site_title_container .description .sub_title {
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   font-weight: bold !important;
   float: none !important;
   text-align: right;
@@ -239,7 +239,7 @@ hr {
   color: #1f1f1f;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   line-height: 28px;
 }
 
@@ -262,7 +262,7 @@ hr {
 }
 
 .post .post_content {
-  font-family: "Times New Roman", "Noto Serif SC", "smilehans SC";
+  font-family: "Times New Roman", "Noto Serif SC", "Noto Serif SC ZH SC";
   font-size: 17px;
   word-break: normal;
   margin-top: 20px;
@@ -327,7 +327,7 @@ hr {
   margin: 10px 15px;
   display: inline-block;
   font-size: 1em;
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   font-weight: bold;
 }
 
@@ -392,7 +392,7 @@ hr {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #000000;
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
@@ -411,7 +411,7 @@ hr {
 }
 
 .list_with_title .listing_title {
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   font-size: 1.6rem;
   color: #1f1f1f;
   font-weight: bold;
@@ -430,7 +430,7 @@ hr {
 }
 
 .list_with_title .listing .listing_post a {
-  font-family: "Noto Serif SC", "smilehans SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH SC";
   font-weight: normal;
   font-size: 15px;
   display: inline-block;
