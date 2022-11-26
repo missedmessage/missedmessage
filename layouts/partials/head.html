@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html {{ with .Site.LanguageCode }}lang="{{ . }}" {{ end }}>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ .Site.Params.googleAnalytics }}');
+    </script>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="erAKKWl2YrE7V6oBpQSi02osBxClSnInNFUAgqaTMlU" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -9,9 +18,9 @@
 	{{ $title := ( .Title ) }}
 	{{ $siteTitle := ( .Site.Title ) }}
 	{{ if .IsHome }}
-	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }} {{ end }} </title>
+	<title>{{ $siteTitle }}{{ if isset .Site.Params "subtitle" }}{{ end }}</title>
 	{{ else }}
-	<title>{{ $title }} </title>
+	<title>{{ $title }}</title>
 	{{ end }}
     <!-- description & keywords -->
     {{ if .Description }}

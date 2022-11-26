@@ -1,4 +1,4 @@
-baseURL = "https://zozo.sswin.site/"
+baseURL = "https://missed.live/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "Missed Messages"                        # site title                     # 网站标题
@@ -7,12 +7,12 @@ hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动
 summaryLength = 100
 paginate = 10                           # shows the number of articles   # 首页显示文章数量
 enableEmoji = true
-googleAnalytics = "G-NK7MGJ5TNJ"                   # your google analytics id       # Google统计代码
 disqusShortname = ""                   # your discuss shortname         # Disqus评论系统代码
 
 pygmentsUseClasses = true
 pygmentCodeFences = true
 pygmentscodefencesguesssyntax = true
+
 
 [author]                               # essential                      # 必需
   name = "MM"
@@ -52,6 +52,7 @@ pygmentscodefencesguesssyntax = true
   Navbar = true
   Comments = true
   hugoEncryptorLanguage = "en"     # within ["zh-cn", "zh-cn"]
+  googleAnalytics = "G-NK7MGJ5TNJ" # your google analytics id       # Google统计代码
 
   
 # waline.
