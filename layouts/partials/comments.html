@@ -6,7 +6,7 @@
 <script>
     var gitalk = new Gitalk({
         clientID: 'c0cdb77394410d0f9fe6',
-        clientSecret: '6a551e84fabf75775648c2703b3d7b2f72b680d8',
+        clientSecret: '{{ .Site.Params.gitalk.ClientSecret }}',
         repo: 'missedmessage',
         owner: 'missedmessage',
         admin: ['missedmessage'],

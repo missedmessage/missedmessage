@@ -34,7 +34,9 @@
                 <!-- 评论系统 -->
                 {{ if (.Param "Comments") }}
                 {{ if .Site.Params.waline.enable }}
-                {{ partial "comments.html" . }}
+                {{ partial "waline.html" . }}
+                {{ else if .Site.Params.gitalk.enable}}
+                {{ partial "gitalk.html" . }}
                 {{ else }}
                 <div class="doc_comments">{{ template "_internal/disqus.html" . }}</div>
                 {{ end }}

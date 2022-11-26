@@ -59,9 +59,11 @@ pygmentscodefencesguesssyntax = true
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://waline.js.org/guide/get-started.html
 [params.waline]
-  enable = true
+  enable = false
   Url = "https://comment.sswin.xyz"
-  
+[params.gitalk]
+  enable = true
+  ClientSecret = "6a551e84fabf75775648c2703b3d7b2f72b680d8"
 
 # Your socail's url
 # 社交地址配置
