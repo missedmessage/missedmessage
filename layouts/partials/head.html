@@ -48,10 +48,31 @@
     <meta name="twitter:site" content="{{ .RelPermalink }}" />
     <meta name="twitter:creator" content="{{ $title }}" />
     <meta name="twitter:title" content="{{ $title }}" />
-    <meta name="twitter:description" content="{{ .Title }}" />
+    {{ if .Description }}
+    <meta name="twitter:description" content="{{ .Description | safeHTML }}" />
+    {{ else if .IsPage }}
+    <meta name="twitter:description" content="{{ .Summary | plainify }}" />
+    {{ else if .Site.Params.description }}
+    <meta name="twitter:description" content="{{ .Site.Params.description | safeHTML }}" />
+    {{ end }}
     <meta name="twitter:image" content="https://bing.img.run/rand.php" />
     
 
+    <meta property="og:title" content="{{ $title }}" />
+    <meta property="og:url" content="{{ .RelPermalink }}" />
+    <meta property="og:image" content="https://bing.img.run/rand.php" />
+    {{ if .Description }}
+    <meta name="og:description" content="{{ .Description | safeHTML }}" />
+    {{ else if .IsPage }}
+    <meta name="og:description" content="{{ .Summary | plainify }}" />
+    {{ else if .Site.Params.description }}
+    <meta name="og:description" content="{{ .Site.Params.description | safeHTML }}" />
+    {{ end }}
+    <meta property="og:site_name" content="{{ $title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:article:author" content="" />
+
+    
 
 
     
