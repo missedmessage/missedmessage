@@ -42,6 +42,18 @@
 	{{ with .OutputFormats.Get "rss" }}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end }}
+
+    <!--twitter card-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ .RelPermalink }}" />
+    <meta name="twitter:creator" content="{{ $title }}" />
+    <meta name="twitter:title" content="{{ $title }}" />
+    <meta name="twitter:description" content="{{ .Title }}" />
+    <meta name="twitter:image" content="https://bing.img.run/rand.php" />
+    
+
+
+
     
     <link rel="shortcut icon" href="https://thispersondoesnotexist.com/image" />
 
