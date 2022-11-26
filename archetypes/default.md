@@ -8,7 +8,7 @@ tags: []
 keywords: []
 description: ""
 Summary: ""
-Navbar: false
+Navbar: true
 comments: true
 math: false
 ---
