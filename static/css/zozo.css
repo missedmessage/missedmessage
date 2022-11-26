@@ -44,6 +44,7 @@ p {
   line-height: 1.9em;
   font-weight: 400;
   margin: 0;
+  text-indent: 2rem;
 }
 
 a {
@@ -482,6 +483,7 @@ hr {
 .markdown ol,
 .markdown dl {
   margin: 0.8em 0;
+  margin-left: 1rem;
 }
 
 .markdown h1,
@@ -542,6 +544,7 @@ hr {
 
 .markdown blockquote p {
   white-space: pre-line;
+  text-indent: 0rem;
 }
 
 .markdown pre::-webkit-scrollbar {
