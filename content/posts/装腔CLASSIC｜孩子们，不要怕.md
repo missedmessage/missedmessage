@@ -16,7 +16,7 @@ math: false
 
 <!--more-->
 
-{{% hugo-encryptor "novel" %}}
+{{% hugo-encryptor "6e06" %}}
 
 一些经验给同学们。
 
