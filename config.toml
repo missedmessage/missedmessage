@@ -59,7 +59,7 @@ pygmentscodefencesguesssyntax = true
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://waline.js.org/guide/get-started.html
 [params.waline]
-  enable = false
+  enable = true
   Url = "https://comment.sswin.xyz"
 [params.gitalk]
   enable = true
